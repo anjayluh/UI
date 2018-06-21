@@ -4,17 +4,21 @@
     <title>
         Sign in
     </title>
+    <script>
+        //Display sign up form on click
+        function sform(a) {
+            if (a == 1)
+                document.getElementById("signup").style.display = "block";
+        }
+    </script>
     <link href="../css/sign up.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="Container">
+    <div class="Container" id="signin">
         <center>
             <h1>Please sign in here...</h1>
             <hr>
-            <br>
-            <br>
-            <br>
             <form>
                 <label>
                     <b>Email</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -25,16 +29,13 @@
                 </label> &nbsp; <input type="password">
                 <p/>
                 <button class="button">Log in</button>
-                <p>Don't have an account?</p>
+                <a href="#signup" onclick="sform(1)" id="slink">Don't have an account?</a>
             </form>
-            <div class="Container">
+            <div class="Container" id="signup">
                 <center>
-                    <br/>
                     <h1>Sign up here</h1>
                     <hr>
-                    <br/>
-                    <br/>
-                    <form>
+                    <form class="signinform">
                         <label>
                             <b>First Name</b>
                         </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
