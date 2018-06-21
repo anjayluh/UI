@@ -1,39 +1,101 @@
-        body {
-        margin: 0 auto;
-        padding: 0px;
-        text-align: center;
-        width: 100%;
-        font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
-        background-color: #ECF0F1;
-    }
+body {
+    margin: 0 auto;
+    padding: 0px;
+    text-align: left;
+    width: 100%;
+    font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    background-color: #ECF0F1;
+    margin-top: 30;
+}
+
+.header {
+    height: auto;
+    width: auto;
+    background-color: #d5d8d8;
+    height: 65;
+}
+
+a,
+ul {
+    padding-left: 75%;
+    text-decoration: none;
+    margin-top: -60;
+    display: block;
+    color: #0467b8;
+}
+
+#slink {
+    padding-left: 0%;
+    text-decoration: none;
+    margin-top: 5;
+}
+
+.logo,
+li {
+    display: inline-block;
+    height: 70;
+}
+
+.btn {
+    text-align: right;
+}
+
+table {
+    margin-top: 35;
+}
+
+#signup {
+    display: none;
+}
+
+.requestform,
+h1,
+form,
+{
+    margin-top: 30;
+}
+hr {
+    width: 400;
+    color: #b804af;
+}
+h1 {
+    color: gray;
+}
+select,
+input {
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    font-family: "Arial";
+}
+.button {
+    /** Font Style **/
     
-    h1 {
-        color: gray;
-    }
+    font-family: "Helvetica, Arial";
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    /** Button Style **/
     
-    .button {
-        /** Font Style **/
-        font-family: "Helvetica, Arial";
-        text-transform: uppercase;
-        font-size: 14px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        /** Button Style **/
-        display: inline-block;
-        vertical-align: middle;
-        vertical-align: auto;
-        zoom: 1;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #13619f;
-        background: #2371b7;
-        padding: 11px 20px;
-        border-radius: 3px;
-        /** Active State Style **/
-        .button:active {
-            border-color: #083559;
-            -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
-            -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
-            box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
-        }
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: auto;
+    zoom: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #13619f;
+    background: #769ce2;
+    padding: 11px 20px;
+    border-radius: 3px;
+}
+.heading {
+    font-family: Helvetica, sans-serif;
+}
+.button:active {
+    border-color: #083559;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
+    -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
+}
