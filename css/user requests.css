@@ -1,0 +1,24 @@
+table,
+th,
+td {
+    border: 1px solid black;
+    width: 60%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    text-align: "center";
+    content: inherit;
+    background-color: khaki;
+}
+
+tr {
+    height: 2em;
+}
+
+th {
+    background-color: honeydew;
+}

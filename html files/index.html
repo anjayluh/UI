@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>
+        Sign in
+    </title>
+    <script>
+        //Display sign up form on click
+        function sform(a) {
+            if (a == 1)
+                document.getElementById("signup").style.display = "block";
+        }
+    </script>
+    <link href="../css/sign up.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="Container" id="signin">
+        <center>
+            <h1>Please sign in here...</h1>
+            <hr>
+            <form>
+                <label>
+                    <b>Email</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </label>&nbsp;<input type="email">
+                <p/>
+                <label>
+                    <b>Password</b>
+                </label> &nbsp; <input type="password">
+                <p/>
+                <button class="button">Log in</button>
+                <a href="#signup" onclick="sform(1)" id="slink">Don't have an account?</a>
+            </form>
+            <div class="Container" id="signup">
+                <center>
+                    <h1>Sign up here</h1>
+                    <hr>
+                    <form class="signinform">
+                        <label>
+                            <b>First Name</b>
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text">
+                        <p/>
+                        <label>
+                            <b>Last Name</b>
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text">
+                        <p/>
+                        <label>
+                            <b>Email</b>
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email">
+                        <p/>
+                        <label>
+                            <b>Password</b>
+                        </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="password">
+                        <p/>
+                        <label>
+                            <b>Repeat Password</b>
+                        </label>&nbsp;<input type="password">
+                        <p/>
+                        <button class="button">Sign Up</button>
+                    </form>
+            </div>
+            </center>
+    </div>
+</body>
+
+</html>
