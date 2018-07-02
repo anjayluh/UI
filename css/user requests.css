@@ -3,6 +3,7 @@ th,
 td {
     border: 1px solid black;
     width: 60%;
+    color: #fff;
 }
 
 table {
@@ -12,7 +13,7 @@ table {
 td {
     text-align: "center";
     content: inherit;
-    background-color: khaki;
+    background-color: rgb(38, 69, 126);
 }
 
 tr {
@@ -20,5 +21,5 @@ tr {
 }
 
 th {
-    background-color: honeydew;
+    background-color: rgb(1, 22, 54);
 }

@@ -5,7 +5,24 @@
         View Requests
     </title>
     <link href="../css/sign up.css" type="text/css" rel="stylesheet">
-    <!--<link href="../css/admin.css" type="text/css" rel="stylesheet">-->
+    <link href="../css/admin.css" type="text/css" rel="stylesheet">
+    <script>
+        //Display Repair Requests form on click
+        function rtable(a) {
+            if (a == 1)
+                document.getElementById("repairrequests").style.display = "block";
+            document.getElementById("maintenancerequests").style.display = "none";
+            document.getElementById("general").style.display = "none";
+
+        }
+        //Display Maintenance Requests form on click
+        function mtable(a) {
+            if (a == 1)
+                document.getElementById("maintenancerequests").style.display = "block";
+            document.getElementById("repairrequests").style.display = "none";
+            document.getElementById("general").style.display = "none";
+        }
+    </script>
 </head>
 
 <body>
@@ -14,25 +31,25 @@
 
         <ul>
             <li class="btn"><a href="requests.html">New Request</a></li>
-            <li class="btn"><a href="all requests.html">My Requests</a></li>&nbsp;&nbsp;
+            <li class="btn"><a href="user requests.html">My Requests</a></li>&nbsp;&nbsp;
             <li class="btn"><a href="../index.html">Logout</a></li>
         </ul>
     </div>
     <div align="center">
-        <table class="request-status">
+        <table class="request-status" id="general">
             <tr class="heading">
-                <td>Employee Name</td>
-                <td>Request</td>
-                <td>Request Type</td>
-                <td>Date</td>
-                <td>Status</td>
+                <th>Employee Name</th>
+                <th>Request</th>
+                <th>Request Type</th>
+                <th>Date</th>
+                <th>Status</th>
             </tr>
             <tr>
                 <td>Mrs. Lufuno</td>
                 <td>New furniture</td>
                 <td>Mantenance Request</td>
                 <td>18-06-2018</td>
-                <td>Status
+                <td>
                     <select name="status">
                     <option>Pending</option>
                     <option>Confirmed</option>
@@ -45,7 +62,20 @@
                 <td>Stationery</td>
                 <td>Mantenance Request</td>
                 <td>18-06-2018</td>
-                <td>Status
+                <td>
+                    <select name="status">
+                    <option>Pending</option>
+                    <option>Confirmed</option>
+                    <option>Approved</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Moses Wandaga</td>
+                <td>Repair router</td>
+                <td>Repair Request</td>
+                <td>02-07-2018</td>
+                <td>
                     <select name="status">
                     <option>Pending</option>
                     <option>Confirmed</option>
@@ -58,7 +88,7 @@
                 <td>Windows replacement</td>
                 <td>Mantenance Request</td>
                 <td>18-06-2018</td>
-                <td>Status
+                <td>
                     <select name="status">
                     <option>Pending</option>
                     <option>Confirmed</option>
@@ -66,7 +96,77 @@
                     </select>
                 </td>
             </tr>
-        </table>
+        </table><br/><br/><br/>
+        <p>
+            <a href="#repairrequests"><button class="button" id="rbutton" onclick="rtable(1)">View Repair Requests</button></a>
+        </p><br/><br/><br/>
+        <p>
+            <a href="#maintenancerequests"><button class="button" id="mbutton" onclick="mtable(1)">View Maintenance Requests</button></a>
+        </p>
+        <table id="repairrequests">
+            <tr class="heading">
+                <th>Employee Name</th>
+                <th>Request</th>
+                <th>Request Type</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Mrs. Lufuno</td>
+                <td>New furniture</td>
+                <td>Mantenance Request</td>
+                <td>18-06-2018</td>
+                <td>
+                    <select name="status">
+                        <option>Pending</option>
+                        <option>Confirmed</option>
+                        <option>Approved</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Ayebale Linda</td>
+                <td>Stationery</td>
+                <td>Mantenance Request</td>
+                <td>18-06-2018</td>
+                <td>
+                    <select name="status">
+                        <option>Pending</option>
+                        <option>Confirmed</option>
+                        <option>Approved</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Kenneth Juuko</td>
+                <td>Windows replacement</td>
+                <td>Mantenance Request</td>
+                <td>18-06-2018</td>
+                <td>
+                    <select name="status">
+                        <option>Pending</option>
+                        <option>Confirmed</option>
+                        <option>Rejected</option>
+                        </select>
+                </td>
+            </tr>
+        </table><br/><br/><br/>
+        <table id="maintenancerequests">
+            <tr>
+                <td>Mrs. Lufuno</td>
+                <td>New furniture</td>
+                <td>Mantenance Request</td>
+                <td>18-06-2018</td>
+                <td>
+                    <select name="status">
+                            <option>Pending</option>
+                            <option>Confirmed</option>
+                            <option>Approved</option>
+                            </select>
+                </td>
+            </tr>
+        </table><br/><br/><br/>
+
     </div>
 </body>
 
