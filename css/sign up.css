@@ -7,7 +7,7 @@ body {
     background-color: rgb(24, 45, 83);
     margin-top: 30;
     background-image: url("../chobe-safari-lodge-nile-view-at-sunset-1");
-    color: rgb(2, 9, 71);
+    color: rgb(246, 246, 248);
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -25,11 +25,15 @@ body {
 
 a,
 ul {
-    padding-left: 75%;
     text-decoration: none;
-    margin-top: -60;
+    margin-top: -50;
     display: block;
     color: #0467b8;
+}
+
+.admin {
+    width: 50;
+    padding-left: 1000;
 }
 
 #slink {
@@ -135,4 +139,8 @@ tr {
 
 th {
     background-color: honeydew;
+}
+
+a:hover {
+    color: #2b0424;
 }

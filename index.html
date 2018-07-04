@@ -9,6 +9,9 @@
         function sform(a) {
             if (a == 1)
                 document.getElementById("signup").style.display = "block";
+            document.getElementById("login").style.display = "none";
+            document.getElementById("login1").style.display = "none";
+            document.getElementById("login2").style.display = "none";
         }
     </script>
     <link href="css/sign up.css" type="text/css" rel="stylesheet">
@@ -17,19 +20,13 @@
 <body>
     <div class="header">
         <img src="Andela-Logo.png" alt="Andela logo" class="logo">
-
-        <ul>
-            <li class="btn"><a href="html files/requests.html">New Request</a></li>
-            <li class="btn"><a href="html files/user requests.html">My Requests</a></li>&nbsp;&nbsp;
-            <li class="btn"><a href="html files/admin.html">Admin</a></li>&nbsp;&nbsp;&nbsp;
-            <li class="btn"><a href="index.html">Logout</a></li>
-        </ul>
+        <a class="btn admin" href="html files/admin.html">Admin</a>
     </div>
     <div class="Container" id="signin">
         <center>
-            <h1>Please sign in here...</h1>
-            <hr>
-            <form>
+            <h1 id="login">Please sign in here...</h1>
+            <hr id="login1">
+            <form id="login2">
                 <label>
                     <b>Email</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </label>&nbsp;<input type="email">

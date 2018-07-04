@@ -16,6 +16,10 @@ td {
     background-color: rgb(38, 69, 126);
 }
 
+.newrequest {
+    padding-left: 1000;
+}
+
 tr {
     height: 2em;
 }

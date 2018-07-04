@@ -10,6 +10,10 @@ table {
     border-collapse: collapse;
 }
 
+.newrequest {
+    padding-left: 1000;
+}
+
 td {
     text-align: "center";
     content: inherit;
